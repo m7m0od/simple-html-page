@@ -1,0 +1,64 @@
+nav{background-color: rgb(37, 36, 36);}
+.first-content img{width: 108px;height: 40px;}
+/*.collapse{margin-left: 300px!important;}*/
+.collapse{justify-content: flex-end!important;}
+.second-content ul li{display: inline-block;margin-right: 20px;}
+.second-content ul li a{text-decoration: none;color: #EEE;}
+.second-content ul li a:hover{color: rgb(95, 138, 138);}
+/*@media screen and (max-width:765px) {.collapse{margin-left: 0!important;}}*/
+
+      
+#secondSection{margin-top: 100px;}
+#secondSection h2{position: relative;width:400px;color: #fff;}
+#secondSection h2::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #222;
+    width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #707070;
+    animation: animate 8s linear infinite;
+    filter: drop-shadow(0 0 20px rgb(128, 123, 123)) drop-shadow(0 0 50px rgb(128, 123, 123));
+}
+@keyframes animate{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+.content{border-radius: 5px;border: 5px solid #DDD;padding: 15px;transition: background-color 1s,transform 0.5s;margin: 5px;}
+.content:hover{background-color: cadetblue;transform:scale(1.1);}
+/*.content h3{display: inline;margin-right: 80px;} and remove div.clr that for center but responsive not perfect*/
+.content h3{float: left;}
+.content i{float: right;margin-top: 12px;}
+.clr{clear: both;}
+#secondSection .btn{color: aqua;font-size: larger;margin-bottom: 3px;}
+
+.testingone{position: relative;padding-top: 80px;padding-bottom: 80px;}
+.testingone::before{content: "";position: absolute;top: 0;left: 0;height: 100%;width: 50%;background-color: #10cab7;}
+.testingone::after{content: "";position: absolute;top: 0;right: 0;height: 100%;width: 50%;background-color: #333;}
+.testingone h2{position: relative;z-index: 2;font-weight: bold;font-size: 30px;color:#FFF;margin: 0 0 30px;text-align: left;}
+.upTesting{position: relative;z-index: 2;}
+.box{background-color: #FFF;padding: 20px;}
+.box > p{margin: 0 0 20px;line-height: 1.5;font-size: 18px;color: #707070;font-style: italic;}
+.person-info{overflow: hidden;}
+.person-info h4{margin: 14px 0 10px;}
+.person-info p{color: #707070;margin: 0;}
+
+
+
+.img-content img{width: 500px;height: 300px;}
+.img-contentt img{width: 195px;height: 195px;cursor: pointer;}
+.img-contentt p{display: none;}
+.lead{font-size: 30px!important;}
+
+
+
+
+
+
